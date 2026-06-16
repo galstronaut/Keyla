@@ -12,37 +12,12 @@
         #page1 h1 { color: #ff5c9a; margin-bottom: 20px; font-size: 30px; }
         .btn { padding: 15px 30px; margin: 10px; border: none; border-radius: 20px; font-size: 20px; cursor: pointer; color: white; }
         
-       /* Ganti kode CSS untuk #page2, .bottom, dan .btn-click dengan ini */
-#page2 { 
-    display: none; 
-    height: 100vh; 
-    background: #fff0f6; 
-    position: relative; 
-    text-align: center;
-    padding-top: 150px; /* <--- ATUR ANGKA INI: Semakin kecil angka, semakin ke atas */
-}
-
-.bottom { 
-    position: relative; 
-    color: #ff5c9a; 
-    font-size: 50px; 
-    font-weight: bold; 
-    text-shadow: 0 0 10px rgba(255, 92, 154, 0.5); 
-    z-index: 10; 
-    margin-bottom: 30px;
-}
-
-.btn-click { 
-    position: relative; 
-    z-index: 20; 
-    padding: 10px 20px; 
-    background: #ff5c9a; 
-    color: white; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer; 
-}
-
+        /* Halaman 2: Animasi */
+        #page2 { display: none; height: 100vh; justify-content: center; align-items: center; background: #fff0f6; position: relative; }
+        canvas { position: absolute; z-index: 1; }
+        .bottom { position: absolute; bottom: 100px; color: #ff5c9a; font-size: 50px; font-weight: bold; text-shadow: 0 0 10px rgba(255, 92, 154, 0.5); z-index: 10; text-align: center; width: 100%; }
+        .btn-click { position: absolute; bottom: 30px; z-index: 20; padding: 10px 20px; background: #ff5c9a; color: white; border: none; border-radius: 10px; cursor: pointer; }
+        
         /* Halaman 3: Konten Kelulusan */
         #page3 { display: none; }
         section { min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 30px; flex-direction: column; opacity: 0; transform: translateY(50px); transition: all 1s ease-out; }
